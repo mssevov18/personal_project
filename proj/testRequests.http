@@ -1,0 +1,25 @@
+# class Person(models.Model):
+#     _id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+#     _datetimeAdded = models.DateTimeField(auto_now=True)
+#     _datetimeChanged = models.DateTimeField(auto_now_add=True)
+#     first_name = models.CharField(max_length=50)
+#     middle_name = models.CharField(max_length=50)
+#     last_name = models.CharField(max_length=50)
+#     birthdate = models.DateField()
+#     # picture
+#     emails = models.EmailField(max_length=254)
+#     phones = models.CharField(max_length=200, editable=False)
+#     discord = models.CharField(max_length=37)
+#     steam = models.CharField(max_length=32)
+#     battlenet = models.CharField(max_length=32)
+#     instagram = models.CharField(max_length=32)
+#     facebook = models.CharField(max_length=32)
+#     github = models.CharField(max_length=32)
+#     leagueoflegends = models.CharField(max_length=32)
+
+
+:root = http://127.0.0.1:8000/
+#
+GET :root/people/api
+#
+POST :root/people/api

@@ -1,0 +1,31 @@
+<style>
+ table {
+    border:none;
+    border-collapse: collapse;
+}
+
+table td {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+table td:first-child {
+    border-left: none;
+}
+
+table td:last-child {
+    border-right: none;
+}
+</style>
+<table>
+    <tr>
+       <td> {{ person.first_name }} {{ person.middle_name }} {{ person.last_name }} </td>
+       <td> Born on {{ person.birthdate }} </td>
+       <!-- TODO -->
+       <td> <a href="/people/{{person.id}}/"> More Details </a> </td>
+    </tr>
+    <tr>
+        <td> {{ person.emails }} </td>
+        <td> {{ person.phones }} </td>
+    </tr>
+</table>
